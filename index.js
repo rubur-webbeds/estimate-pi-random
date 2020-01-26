@@ -1,4 +1,10 @@
 n = process.argv[2];
+
+if(n == null){
+    console.error('USAGE: node index.js [number_of_points]');
+    process.exit(1);
+}
+
 circlePoints = 0;
 totalPoints = 0;
 
